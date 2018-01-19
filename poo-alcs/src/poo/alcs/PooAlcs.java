@@ -11,11 +11,20 @@ package poo.alcs;
  */
 public class PooAlcs {
 
-    /**
-     * @param args the command line arguments
-     */
+    //
     public static void main(String[] args) {
+         //Todo code application logic here 
         System.out.println("Hola mundo");
+        //Tenemos que generar antes los objetos de las clases anteriores
+        Usuario x=new Usuario();
+       x.altura=1.68f;
+       x.peso=71f;
+        Imc algo=new Imc();
+        algo.u=x;
+        //Calculamos el imc a travez de su objeto 
+        System.out.println(algo.calcular());
+        
+                
     }
     
 }
