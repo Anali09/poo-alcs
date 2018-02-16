@@ -9,7 +9,6 @@ package poliejemplo;
  *
  * @author T-102
  */
-public interface ComportamientoAnimal {
-    int x 4;
+public interface ComportamientoAnimal { 
     public void hacerRuido();
 }
