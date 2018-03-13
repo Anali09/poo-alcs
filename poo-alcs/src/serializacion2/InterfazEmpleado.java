@@ -69,6 +69,11 @@ public class InterfazEmpleado extends javax.swing.JFrame {
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ventas", "Sistemas", "Contabilidad", "Finanzas " }));
 
         jButton1.setText("Guardar Empleado ");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -194,6 +199,16 @@ public class InterfazEmpleado extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        Empleado e1=new Empleado("Ana", "Cruz", "Saucedo", 45000F, "Sistemas");
+        System.out.println(e1);
+        
+        System.out.println("Nombre:"+e1.getNombre());
+        System.out.println("Paterno"+e1.getPaterno());
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
