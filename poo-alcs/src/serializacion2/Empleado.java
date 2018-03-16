@@ -25,10 +25,19 @@ public class Empleado {
         this.materno = materno;
         this.sueldoBase = sueldoBase;
         this.departamento = departamento;
-    }
+        {
 
     Public Empleado (){
         
+    
+}
+
+public String getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
     }
 
     public String getNombre() {
@@ -63,16 +72,13 @@ public class Empleado {
         this.sueldoBase = sueldoBase;
     }
 
-    public String getDepartamento() {
-        return departamento;
-    }
+    private static class Public {
 
-    public void setDepartamento(String departamento) {
-        this.departamento = departamento;
+        public Public() {
+        }
     }
+}
+
    
-  
-         
-     }
-     
+        
     
