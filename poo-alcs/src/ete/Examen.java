@@ -5,11 +5,13 @@
  */
 package ete;
 
+import java.io.Serializable;
+
 /**
  *
  * @author T-102
  */
-public class Examen {
+public class Examen implements Serializable{
     
     private String nombre;
     private float calificacion;

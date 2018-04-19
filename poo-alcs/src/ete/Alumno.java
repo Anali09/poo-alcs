@@ -9,6 +9,8 @@ package ete;
  *
  * @author T-102
  */
+import java.io.Serializable;
+
 public class Alumno  {
     
     

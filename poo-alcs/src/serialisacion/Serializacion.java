@@ -10,7 +10,7 @@ public class Serializacion {
     
       public static void main(String[] args) throws Exception {
         //Primero generamos un usuario
-        Usuario u=new Usuario(20,"Pedro");
+        Usuario u = new Usuario(20,"Pedro");
         
         //Generamos un modelo de la clase que serializa
         PersistenciaUsuario p=new PersistenciaUsuario();

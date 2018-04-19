@@ -12,31 +12,12 @@ public class Empleado {
      private String materno;
      private Float sueldoBase;
      private String departamento;
-     
-      @Override
-    public String toString() {
-        return "Empleado{" + "nombre=" + nombre + ", paterno=" + paterno + ", materno=" + materno + ", sueldoBase=" + sueldoBase + ", departamento=" + departamento + '}';
-    }
-     
 
     public Empleado(String nombre, String paterno, String materno, Float sueldoBase, String departamento) {
         this.nombre = nombre;
         this.paterno = paterno;
         this.materno = materno;
         this.sueldoBase = sueldoBase;
-        this.departamento = departamento;
-        {
-
-    Public Empleado (){
-        
-    
-}
-
-public String getDepartamento() {
-        return departamento;
-    }
-
-    public void setDepartamento(String departamento) {
         this.departamento = departamento;
     }
 
@@ -72,13 +53,12 @@ public String getDepartamento() {
         this.sueldoBase = sueldoBase;
     }
 
-    private static class Public {
-
-        public Public() {
-        }
+    public String getDepartamento() {
+        return departamento;
     }
-}
 
-   
-        
-    
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+           
+}

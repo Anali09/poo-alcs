@@ -5,6 +5,13 @@
  */
 package serializacion2;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+
 /**
  *
  * @author T-102
@@ -40,47 +47,25 @@ public class PersistenciaEmpleado {
     
     //Ponemos un mensajito 
         System.out.println("Objeto guardado con exito ");
-}catch (Exception e){
-        System.out.println(e.getMessage());
-}
-
-    }    
-    
-    
-    public Usuario getU() {
-        return u;
-    }
-
-    public void setU(Usuario u) {
-        this.u = u;
+}catch (Exception ex){
+        System.out.println(ex.getMessage());
+}   
     }
     
-    public Usuario recobrarUsuario() {
-        File file=new File("archivaldo.yo");
-        Usuario recobrado=null;
-        //El proceso inverso
-        try{
-        FileInputStream fis=new  FileInputStream(file);
-        ObjectInputStream ois=new ObjectInputStream(fis);
-        recobrado= (Usuario)ois.readObject();
-    }catch (Exception e){
-               
-                }
-        return recobrado;
-    }   
-    
-    
-    
-    public ArrayList<Empleado>buscarTodos(){
-        File file=new File("empleados.yo");
-        try{
-            FileInputStream fis=new FileInputStream(file);
-            ObjectInputStream ois=new ObjectInputStream(fis);
-            empleados= (ArrayList<Empleado>) ois.readObject();
-        }catch(Exception e){;
-        
+    public ArrayList<Empleado> buscarTodos(){
+     
+        File file = new File ("empleado.yo");
+        try {
+            FileInputStream fis = new FileInputStream(file);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            empleados = (ArrayList<Empleado>) ois.readObject();
             
-        }
+        } catch(Exception e){
+        
+    }
         return empleados;
     }
+   
+    
+    
 }

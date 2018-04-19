@@ -6,10 +6,7 @@
 package serialisacion;
 
 import java.io.*;
-public class Usuario {
-    
-//Sirve para comprimir o serializar objetos a partir de la clase
-public class Usuario implements Serializable {
+    public class Usuario implements Serializable {
     int edad;
     String nombre;
 
@@ -42,5 +39,4 @@ public class Usuario implements Serializable {
         this.nombre = nombre;
     }
     
-}
 }
